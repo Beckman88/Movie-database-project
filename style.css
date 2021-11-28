@@ -20,11 +20,9 @@ body {
 .navbar-container{
     display: flex;
     align-items: center;
-    background-color:#000000;
+    background-color:#264653;
     padding: 0 80px;
     height: 100%;
-    
-    
 }
 
 /* Profile0*/
@@ -136,16 +134,6 @@ body {
     margin-bottom: 60px;  
 }
 
-.rightSideBar{
-    height: 100%;
-    width: 100px;;
-    background-color: #264653;
-    position:fixed;
-    display: flex;
-    flex-direction: column;
-    padding-top: 60px;
-    align-items: center;
-}
 
 /* Main-movie-interface*/
 
@@ -154,9 +142,10 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     background-color:#f4a261;
-    margin-left: 100px;
+    
     padding-top: 20px;
     border-right: #264653 solid 40px;
+    border-left: #264653 solid 100px;
 
 }
 
