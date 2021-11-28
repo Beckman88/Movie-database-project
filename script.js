@@ -57,3 +57,4 @@ function getColor(vote) {
         return 'red'
     }
 }
+
