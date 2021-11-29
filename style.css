@@ -2,16 +2,21 @@
     margin:0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+
 }
 
 /* Top navbar*/
 .navbar {
     width: 100%;
     height: 100px;
-    
-
+    position: fixed;
+    z-index: 2;
     
 
 }
@@ -20,12 +25,13 @@ body {
 .navbar-container{
     display: flex;
     align-items: center;
-    background-color:#264653;
+    background-color:#264653ea ;
     padding: 0 80px;
     height: 100%;
+    
 }
 
-/* Profile0*/
+/* Profile*/
 
 .logo-container{
     flex:1;
@@ -121,7 +127,7 @@ body {
     position:fixed;
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 100px;
     align-items: center;
     
     
@@ -132,20 +138,22 @@ body {
     color:#f4a261;
     font-size: 35px;
     margin-bottom: 60px;  
+    visibility: hidden;
 }
 
 
 /* Main-movie-interface*/
 
-main{
+#main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color:#f4a261;
-    
     padding-top: 20px;
     border-right: #264653 solid 40px;
     border-left: #264653 solid 100px;
+    padding-top: 20px;
+    border-top: #264653 100px solid;
 
 }
 
@@ -159,6 +167,7 @@ main{
         position:relative;
         overflow: hidden;
         background-color:#264653;
+        z-index: 1;
     
 }
 
@@ -179,6 +188,7 @@ transition: 0.5s ease;
     justify-content: space-between;
     padding: 0.5rem 1rem 1rem;
     letter-spacing: 0.5px;
+    
 }
 
 .movie-info h3{
@@ -224,4 +234,30 @@ transition: 0.5s ease;
 
 .movie:hover .overview{
     transform:translateY(0);
+}
+
+
+/* Media Query*/
+@media (max-width: 600px) {
+.sidebar-icon {
+visibility:visible;
+}
+.menu-list-item {
+    visibility: hidden;
+}
+
+#main{
+border-right:#264653 5px solid;
+}
+
+.overview {
+    max-height: 50%;
+    text-overflow: ellipsis;
+    
+
+
+
+
+}
+
 }
