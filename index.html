@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,300;1,500&family=Sen:wght@700&display=swap" rel="stylesheet">    <title>Movie Database</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,300;1,500&family=Sen:wght@700&display=swap"rel="stylesheet">  
+    <title>Movie Database</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
@@ -20,6 +21,7 @@
                     <li class="menu-list-item">Popular</li>
                     <li class="menu-list-item">Trends</li>
                 </ul>
+                
             </div>
             <div class="profile-container">
                 <img src="img/profilepicture.jpg" alt="Userpicture" class="profile-picture">
@@ -28,7 +30,9 @@
                         <div class="toggle">
                         <i class="fas fa-moon toggle-icon"></i>
                         <i class="fas fa-sun toggle-icon" ></i>
-                        <div class="toggle-ball"></div>
+                        <div onclick="darkMode()" id="toggle-ball"></div>
+                        
+                
                     </div>
             </div>
         </div>
@@ -49,19 +53,18 @@
 
     <div class="movie-info">
         <h3>Movie Title</h3>
-        <span class="green">9.8</span>
+        <span class="grade">9.8</span>
     </div>
     <div class="overview">
         <h3>Overview</h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam itaque ab quae, 
-        sit error perferendis minus repudiandae laboriosam facere beatae hic id voluptates optio 
-        eaque temporibus, iusto rerum ad. Voluptatem.
+        
     </div>
 </div>
 
-        </main>
+         </main>
+         <button class="backToTopBtn">Back to top</button>
         </div>
-    </div>
+      </div>
     </div>
 <script src="script.js"></script>
 </body>

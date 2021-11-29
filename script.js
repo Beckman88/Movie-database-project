@@ -57,3 +57,15 @@ function getColor(vote) {
         return 'red'
     }
 }
+
+
+
+//Dark-mode
+
+
+/*
+function darkMode(){
+    document.getElementById("toggle-ball").style.transform = "translateX(20px)";
+    document.getElementById("main").style.backgroundColor = "264653";
+}
+*/
