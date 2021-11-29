@@ -28,7 +28,7 @@ function showMovies(data) {
         const movieEl = document.createElement('div');
         movieEl.classList.add('movie');
         movieEl.innerHTML = `
-             <img src="${IMG_URL+poster_path}" alt="${title}">
+        <img src="${IMG_URL+poster_path}" alt="${title}">
 
             <div class="movie-info">
                 <h3>${title}</h3>
@@ -57,4 +57,3 @@ function getColor(vote) {
         return 'red'
     }
 }
-
