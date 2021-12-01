@@ -5,38 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,300;1,500&family=Sen:wght@700&display=swap"rel="stylesheet">  
     <title>Movie Database</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/index/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
 </head>
 
 <body>
+    
+
     <div class="navbar">
         <div class="navbar-container">
             <div class="logo-container"><h1 class="logo">Betflix</h1></div>
             <div class="menu-container">
                 <ul class="menu-list">
-                    <li class="menu-list-item">Home</li>
-                    <li class="menu-list-item">Movies</li>
-                    <li class="menu-list-item">Popular</li>
-                    <li class="menu-list-item">Trends</li>
+                    <li class="menu-list-item"><a href="/index/index.html"></a>Home</a></li>
+                    <li class="menu-list-item"><a href="/index/index.html"></a>New Releases</a></li>
+                    <li class="menu-list-item"><a href="/index/index.html"></a>Popular</a></li>
+                    <li class="menu-list-item"><a href="/index/index.html"></a>Top Rated</a></li>
                 </ul>
                 
             </div>
+            
+            
             <div class="profile-container">
-                <img src="img/profilepicture.jpg" alt="Userpicture" class="profile-picture">
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                  </div>
+                <img src="/img/profilepicture.jpg" alt="Userpicture" class="profile-picture">
                 <div class="profile-text-container"><span>Profile</span>
                     <i class="fas fa-caret-down"></i></div>
-                        <div class="toggle">
-                        <i class="fas fa-moon toggle-icon"></i>
-                        <i class="fas fa-sun toggle-icon" ></i>
-                        <div onclick="darkMode()" id="toggle-ball"></div>
-                        
                 
                     </div>
             </div>
         </div>
-    </div>
+    </>
     <div class="sidebar">
         <i class="search sidebar-icon fas fa-search"></i>
         <i class="home sidebar-icon fas fa-home"></i>
@@ -46,10 +49,9 @@
     </div>
 
 <main id="main">
-
 </div>
 <div class="movie">
-    <img src="img/moviepicture.jpg" alt="image">
+    <img src="/img/moviepicture.jpg" alt="image">
 
     <div class="movie-info">
         <h3>Movie Title</h3>
@@ -60,12 +62,8 @@
         
     </div>
 </div>
+</main>
 
-         </main>
-         <button class="backToTopBtn">Back to top</button>
-        </div>
-      </div>
-    </div>
-<script src="script.js"></script>
+<script src="/index/index.js"></script>
 </body>
 </html>
