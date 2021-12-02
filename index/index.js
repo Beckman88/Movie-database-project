@@ -1,8 +1,14 @@
 
 
+function redirect(){
+    window.location = "/popular/popular.html"
+}
+
+
+
 const API_KEY = 'api_key=25254d4e06f0bd3b7e0a3b24c7b86fab';
 const BASE_URL = 'https://api.themoviedb.org/3';
-const API_POPULAR_URL = BASE_URL + '/discover/movie?sort_by=latest.asc&'+API_KEY;
+const API_POPULAR_URL = BASE_URL + '/discover/movie?sort_by=latest.asc&include_adult=false&language=en-US&include_video=false&page=1&'+API_KEY;
 const IMG_URL = "https://image.tmdb.org/t/p/w500";
 
 const main = document.getElementById("main");
@@ -68,13 +74,32 @@ function getColor(vote) {
 }
 
 
+const intro = document.querySelector(".intro");
+const letter = document.querySelector(".welcome-header");
+const letterSpan = document.querySelectorAll(".letter");
 
-//Dark-mode
 
+window.addEventListener('DOMContentLoaded', ()=>{
 
-/*
-function darkMode(){
-    document.getElementById("toggle-ball").style.transform = "translateX(20px)";
-    document.getElementById("main").style.backgroundColor = "264653";
-}
-*/
+    setTimeout(()=>{
+
+        letterSpan.forEach((span, idx)=>{
+            setTimeout(()=>{
+                span.classList.add('active');
+            }, (idx + 1) * 200)
+        });
+
+        setTimeout(()=>{
+            letterSpan.forEach((span, idx) =>{
+                setTimeout(()=>{
+                    span.classList.remove("active");
+                    span.classList.add("fade");
+                },(idx + 1) * 50)
+            })
+        },2000);
+
+        setTimeout(()=>{
+            intro.style.top = "-100vh";
+        },2300)
+    })
+})

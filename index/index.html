@@ -11,27 +11,32 @@
 </head>
 
 <body>
-    
+    <div class="intro">
+            <h1 class="welcome-header">
+                <span class="letter">Welcome</span>
+                <span class="letter">to</span>
+                <span id="betflix"  class="letter">Betflix</span>
+            </h1>
+        </div>
 
     <div class="navbar">
         <div class="navbar-container">
             <div class="logo-container"><h1 class="logo">Betflix</h1></div>
             <div class="menu-container">
                 <ul class="menu-list">
-                    <li class="menu-list-item"><a href="/index/index.html"></a>Home</a></li>
-                    <li class="menu-list-item"><a href="/index/index.html"></a>New Releases</a></li>
-                    <li class="menu-list-item"><a href="/index/index.html"></a>Popular</a></li>
-                    <li class="menu-list-item"><a href="/index/index.html"></a>Top Rated</a></li>
+                    <li class="menu-list-item"><a href="/index/index.html">Home</a></li>
+                    <li class="menu-list-item"><a href="/newReleases/newReleases.html">New Releases</a></li>
+                    <li class="menu-list-item"><a href="/Popular/popular.html">Popular</a></li>
+                    <li class="menu-list-item"><a href="/topRating/topRated.html">Top Rated</a></li>
                 </ul>
                 
             </div>
-            
-            
+        
             <div class="profile-container">
                 <div class="search-box">
                     <button class="btn-search"><i class="fas fa-search"></i></button>
                     <input type="text" class="input-search" placeholder="Type to Search...">
-                  </div>
+            </div>
                 <img src="/img/profilepicture.jpg" alt="Userpicture" class="profile-picture">
                 <div class="profile-text-container"><span>Profile</span>
                     <i class="fas fa-caret-down"></i></div>
@@ -39,13 +44,12 @@
                     </div>
             </div>
         </div>
-    </>
+    </div>
     <div class="sidebar">
-        <i class="search sidebar-icon fas fa-search"></i>
-        <i class="home sidebar-icon fas fa-home"></i>
-        <i class="movies sidebar-icon fas fa-tv"></i>
-        <i class="popular sidebar-icon fas fa-users"></i>
-        <i class="trends sidebar-icon fas fa-poll"></i>
+        <a href="/index/index.html"><i class="home sidebar-icon fas fa-home"></i></a>
+        <a href="/newReleases/newReleases.html"><i class="movies sidebar-icon fas fa-tv"></i></a>
+        <a href="/popular/popular.html"><i class="popular sidebar-icon fas fa-users"></i></a>
+        <a href="/topRating/topRated.html"><i class="trends sidebar-icon fas fa-poll"></i></a>
     </div>
 
 <main id="main">

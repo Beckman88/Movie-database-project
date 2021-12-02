@@ -12,69 +12,6 @@ body {
 
 }
 
-
-/*Splash Screen*/
-header{
-    position:relative;
-    left:0;
-    top:0;
-    width: 100%;
-    height: 80px;
-}
-
-header h4 {
-    position:absolute;
-    left: 10%;
-    bottom:1rem;
-}
-
-#betflix{
-    font-family: 'Sen', sans-serif;
-    color: #e9c46a;
-    font-size: 100px;
-}
-
-.intro {
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #264653;
-    transition: 1.5s;
-}
-
-.welcome-header {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #f4a261;
-}
-
-.letter {
-    position: relative;
-    display: inline-block;
-    bottom: -20px;
-    opacity: 0;
-    font-size: 4rem;
-}
-
-
-.letter.active {
-    bottom: 0;
-    opacity: 1;
-    transition: ease-in-out 0.5s;
-}
-
-.letter.fade {
-    bottom: 150px;
-    opacity: 0;
-    transition: ease-in-out 0.5s;
-}
-
-
 /* Top navbar*/
 .navbar {
     width: 100%;
@@ -89,10 +26,8 @@ header h4 {
 .navbar-container{
     display: flex;
     background-color:#264653ea ;
+    margin-right: 200px;
     height: 100%;
-    margin-right: 150px;
-    text-align: center;
-    
 
     
 }
@@ -101,15 +36,14 @@ header h4 {
 
 .logo-container{
     flex:1;
-    margin-top: 20px;
-
+    margin-left: 20px;
     
 }
 
 .logo{
     font-family: 'Sen', sans-serif;
     color: #e9c46a;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .menu-container{
