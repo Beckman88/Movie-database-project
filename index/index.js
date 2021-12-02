@@ -1,11 +1,4 @@
 
-
-function redirect(){
-    window.location = "/popular/popular.html"
-}
-
-
-
 const API_KEY = 'api_key=25254d4e06f0bd3b7e0a3b24c7b86fab';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_POPULAR_URL = BASE_URL + '/discover/movie?sort_by=latest.asc&include_adult=false&language=en-US&include_video=false&page=1&'+API_KEY;
@@ -40,7 +33,7 @@ function showMovies(data) {
                 <span class="${getColor(vote_average)}">${vote_average}</span>
             </div>
             <div class="overview">
-                <h3>Overview</h3>
+            <h3>${title}</h3>
                 ${overview}
             </div>
         
